@@ -4,6 +4,7 @@ import Box from '@mui/material/Box'
 import Paper from '@mui/material/Paper'
 import Grid from '@mui/material/Unstable_Grid2'
 import Tiles from '../TilesForBoard'
+import Photo from '../PhotoAndPrompt'
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -23,7 +24,9 @@ export default function BasicGrid() {
           </Item>
         </Grid>
         <Grid xs={4}>
-          <Item>xs=4</Item>
+          <Item>
+            <Photo />
+          </Item>
         </Grid>
       </Grid>
     </Box>
